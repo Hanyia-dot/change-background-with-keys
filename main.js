@@ -7,17 +7,19 @@ document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 const changeColor = (e) => {
     //console.log(e.keyCode);   - CHECK THE KEY NUMBER  
 
-    /* const keyUp = e.keyCode == 38;
-    co nst keyDown = e.keyCode == 40*/
+     //   IF,  ELSE IF
 
-    /* //   IF,  ELSE IF
-    if(keyUp){
+/* 
+    const keyUp = e.keyCode == 38;
+    const keyDown = e.keyCode == 40;
+
+    if(keyUp && red < 256){
         document.body.style.backgroundColor = `rgb(${red++}, ${green++}, ${blue++})`;
-    } 
-    //else if
-    if (keyDown){
+        
+    } else if(keyDown && red >= 0) {
         document.body.style.backgroundColor = `rgb(${red--}, ${green--}, ${blue--})`;
-    } */
+        
+    }*/
     
     //   SWITCH
 
@@ -36,9 +38,7 @@ const changeColor = (e) => {
             blue = blue - 2;
             document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
             //break;
-    }
-
-
+    } 
 
 
 }
